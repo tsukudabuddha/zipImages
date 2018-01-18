@@ -9,6 +9,14 @@
 import UIKit
 
 class ImageCollectionTableViewController: UITableViewController {
+    
+    var ImageCollections: [ImageCollection] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +26,14 @@ class ImageCollectionTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        let network = Network()
+        network.getURLs { (imagesCollection) in
+            for imgCollection in imagesCollection {
+                self.ImageCollections.append(imgCollection)
+            }
+            print(imagesCollection)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +45,24 @@ class ImageCollectionTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return ImageCollections.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! collectionTableViewCell
 
         // Configure the cell...
-
+        cell.imageCollectionLabel.text = self.ImageCollections[indexPath.row].collectionName
+        
+        print(self.ImageCollections[indexPath.row].collectionName)
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

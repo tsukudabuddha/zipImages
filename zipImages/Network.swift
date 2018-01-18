@@ -7,15 +7,29 @@
 //
 
 import Foundation
+import Alamofire
+import Zip
 
 
 class Network {
     
     func downloadZip() {
-        let session = URLSession.shared
+ 
+    }
+    
+    func getURLs(completion: @escaping ([ImageCollection]) -> Void) {
+        let masterURL = URL(string: "https://s3-us-west-2.amazonaws.com/mob3/image_collection.json")!
         
-        session.downloadTask(with: <#T##URL#>) { (<#URL?#>, <#URLResponse?#>, <#Error?#>) in
-            <#code#>
+        Alamofire.request(masterURL, method: .get).responseJSON { (response) in
+            if let data = response.data {
+                let collections = try? JSONDecoder().decode([ImageCollection].self, from: data)
+                
+                if let collections = collections {  
+                    completion(collections)
+                } else {
+                    print("trip: \(data.description)")
+                }
+            }
         }
     }
 }

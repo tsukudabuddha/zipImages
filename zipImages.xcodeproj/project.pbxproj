@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		498EE87F20100C9F00ECE057 /* ImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498EE87E20100C9F00ECE057 /* ImageCollection.swift */; };
+		498EE881201011C500ECE057 /* collectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498EE880201011C500ECE057 /* collectionTableViewCell.swift */; };
 		49E340372010037500354EA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E340362010037500354EA0 /* AppDelegate.swift */; };
 		49E340392010037500354EA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E340382010037500354EA0 /* ViewController.swift */; };
 		49E3403C2010037500354EA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E3403A2010037500354EA0 /* Main.storyboard */; };
@@ -15,9 +17,13 @@
 		49E340492010063200354EA0 /* ImageCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E340482010063200354EA0 /* ImageCollectionTableViewController.swift */; };
 		49E3404B2010065600354EA0 /* unzippedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3404A2010065600354EA0 /* unzippedCollectionViewController.swift */; };
 		49E3404D2010079400354EA0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3404C2010079400354EA0 /* Network.swift */; };
+		81E88E2D777CB7AC08456F25 /* Pods_zipImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3C9EFCDF5F5A855A8C4D38 /* Pods_zipImages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B49D929B2A7944D49D1981E /* Pods-zipImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zipImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-zipImages/Pods-zipImages.release.xcconfig"; sourceTree = "<group>"; };
+		498EE87E20100C9F00ECE057 /* ImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollection.swift; sourceTree = "<group>"; };
+		498EE880201011C500ECE057 /* collectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionTableViewCell.swift; sourceTree = "<group>"; };
 		49E340332010037500354EA0 /* zipImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zipImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E340362010037500354EA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E340382010037500354EA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		49E340482010063200354EA0 /* ImageCollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionTableViewController.swift; sourceTree = "<group>"; };
 		49E3404A2010065600354EA0 /* unzippedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unzippedCollectionViewController.swift; sourceTree = "<group>"; };
 		49E3404C2010079400354EA0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5F3C9EFCDF5F5A855A8C4D38 /* Pods_zipImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zipImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5A3ED2299B883B26C8161E /* Pods-zipImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zipImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zipImages/Pods-zipImages.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E88E2D777CB7AC08456F25 /* Pods_zipImages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,8 @@
 			children = (
 				49E340352010037500354EA0 /* zipImages */,
 				49E340342010037500354EA0 /* Products */,
+				A5010CFB22BC01906E495643 /* Pods */,
+				5C1712512069D3836FE1D36B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,13 +75,32 @@
 				49E340382010037500354EA0 /* ViewController.swift */,
 				49E3403A2010037500354EA0 /* Main.storyboard */,
 				49E3404C2010079400354EA0 /* Network.swift */,
+				498EE87E20100C9F00ECE057 /* ImageCollection.swift */,
 				49E3404A2010065600354EA0 /* unzippedCollectionViewController.swift */,
+				498EE880201011C500ECE057 /* collectionTableViewCell.swift */,
 				49E340482010063200354EA0 /* ImageCollectionTableViewController.swift */,
 				49E3403D2010037500354EA0 /* Assets.xcassets */,
 				49E3403F2010037500354EA0 /* LaunchScreen.storyboard */,
 				49E340422010037500354EA0 /* Info.plist */,
 			);
 			path = zipImages;
+			sourceTree = "<group>";
+		};
+		5C1712512069D3836FE1D36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F3C9EFCDF5F5A855A8C4D38 /* Pods_zipImages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5010CFB22BC01906E495643 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A3ED2299B883B26C8161E /* Pods-zipImages.debug.xcconfig */,
+				3B49D929B2A7944D49D1981E /* Pods-zipImages.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49E340452010037500354EA0 /* Build configuration list for PBXNativeTarget "zipImages" */;
 			buildPhases = (
+				3116A06ECBE422D92A015890 /* [CP] Check Pods Manifest.lock */,
 				49E3402F2010037500354EA0 /* Sources */,
 				49E340302010037500354EA0 /* Frameworks */,
 				49E340312010037500354EA0 /* Resources */,
+				EC32811BBA8E989B61476362 /* [CP] Embed Pods Frameworks */,
+				329AB8E406C4FE1F0848B96A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,16 +173,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3116A06ECBE422D92A015890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zipImages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		329AB8E406C4FE1F0848B96A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zipImages/Pods-zipImages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC32811BBA8E989B61476362 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-zipImages/Pods-zipImages-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zipImages/Pods-zipImages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49E3402F2010037500354EA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				49E3404D2010079400354EA0 /* Network.swift in Sources */,
+				498EE87F20100C9F00ECE057 /* ImageCollection.swift in Sources */,
 				49E340492010063200354EA0 /* ImageCollectionTableViewController.swift in Sources */,
 				49E340392010037500354EA0 /* ViewController.swift in Sources */,
 				49E340372010037500354EA0 /* AppDelegate.swift in Sources */,
 				49E3404B2010065600354EA0 /* unzippedCollectionViewController.swift in Sources */,
+				498EE881201011C500ECE057 /* collectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +375,7 @@
 		};
 		49E340462010037500354EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD5A3ED2299B883B26C8161E /* Pods-zipImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +391,7 @@
 		};
 		49E340472010037500354EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B49D929B2A7944D49D1981E /* Pods-zipImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
