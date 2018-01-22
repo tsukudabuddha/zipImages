@@ -1,0 +1,6 @@
+framework module Pods_zipImages {
+  umbrella header "Pods-zipImages-umbrella.h"
+
+  export *
+  module * { export * }
+}

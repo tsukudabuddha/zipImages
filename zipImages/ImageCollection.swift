@@ -13,7 +13,7 @@ struct ImageCollection {
     let collectionName: String
     let zippedImagesString: String
     let zippedImagesUrl: URL
-    let unzippedImagesUrl: URL? = nil
+    var unzippedImagesUrl: URL? = nil
 }
 
 extension ImageCollection: Decodable {
